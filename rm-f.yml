@@ -1,0 +1,6 @@
+- hosts: servers 
+  tasks:
+  - name: shell command
+    become: true
+    become_user: root
+    shell: rm -rf /home/ubuntu/test/filename && rm -rf /etc/cron.d/filename && rm -rf /opt/foldername 

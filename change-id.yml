@@ -1,0 +1,6 @@
+- hosts: servers 
+  tasks:
+  - name: shell command
+    become: true
+    become_user: root
+    shell: sed -i 's/orignal-text1/new-text2/g' /opt/start.sh

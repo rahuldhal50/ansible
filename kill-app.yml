@@ -1,0 +1,6 @@
+- hosts: servers 
+  tasks:
+  - name: shell command
+    become: true
+    become_user: root
+    shell: killall app-name
